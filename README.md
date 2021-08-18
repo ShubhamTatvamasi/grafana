@@ -12,6 +12,7 @@ helm upgrade -i grafana grafana/grafana \
   --create-namespace \
   --namespace grafana \
   --set service.type=NodePort \
+  --set persistence.enabled=true
   --set service.nodePort=30000
 ```
 
