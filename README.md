@@ -25,3 +25,8 @@ datasource:
 http://prometheus.lens-metrics.svc.cluster.local
 ```
 
+Dashboard | ID
+--- | --- 
+Node Exporter Full | 1860
+
+
