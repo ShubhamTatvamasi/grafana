@@ -15,8 +15,12 @@ helm upgrade -i grafana grafana/grafana \
   --set service.nodePort=30000
 ```
 
-get password for `admin` user:
+update password for `admin` user:
 ```bash
+kubectl patch secret grafana -n grafana \
+  --patch='{"data": {"admin-password": "YWRtaW4="}}'
+
+# get password for admin user:
 kubectl get secret --namespace grafana grafana -o jsonpath="{.data.admin-password}" | base64 --decode ; echo
 ```
 
