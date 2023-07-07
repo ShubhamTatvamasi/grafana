@@ -1,5 +1,7 @@
 # grafana
 
+https://grafana.com/grafana/dashboards/
+
 add helm repo:
 ```bash
 helm repo add grafana https://grafana.github.io/helm-charts
