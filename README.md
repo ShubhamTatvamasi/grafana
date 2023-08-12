@@ -35,6 +35,7 @@ http://prometheus.lens-metrics.svc.cluster.local
 Dashboard | ID
 --- | --- 
 Node Exporter Full | 1860
+Kubernetes / Views / Pods | 15760
 Istio Control Plane Dashboard | 7645
 Istio Service Dashboard | 7636
 Istio Workload Dashboard | 7630
