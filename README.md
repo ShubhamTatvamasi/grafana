@@ -4,6 +4,29 @@ https://grafana.com/grafana/dashboards/
 
 add helm repo:
 ```bash
+helm repo add grafana https://grafana-community.github.io/helm-charts/
+helm repo update
+```
+
+install grafana:
+```bash
+helm upgrade -i grafana grafana/grafana \
+  --create-namespace \
+  --namespace grafana \
+  --set service.type=LoadBalancer \
+  --set persistence.enabled=true \
+  --set adminPassword=admin
+```
+
+
+
+
+---
+
+### OLD
+
+add helm repo:
+```bash
 helm repo add grafana https://grafana.github.io/helm-charts
 helm repo update
 ```
