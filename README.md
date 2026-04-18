@@ -18,7 +18,7 @@ helm upgrade -i grafana grafana/grafana \
   --set adminPassword=admin
 ```
 
-
+ID and Password = `admin` / `admin`
 
 
 ---
